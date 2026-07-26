@@ -1,54 +1,53 @@
 <!-- Kris Lee | July 24, 2026-->
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Music Player | Final Project</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <div id="phone-container">
-            <div id="container">
-            <div id="phone-screen">
 
-            </div>
-            <div id="song-title-screen">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player | Final Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
 
+<body>
+    <div id="wrapper">
+        <div class="music-player-container">
+            <div id="album-screen">
+                <img src="assets/svgs/music-player-song-svgrepo-com.svg" alt="placeholder image">
             </div>
-            <div id="phone-controls">
-                <ul class="control-container">
-                <li>
-                    <div>
-                        <img id="minus-btn" src="assets/svgs/darkMinusBtn.svg" alt="Volume decrement button"/>
+            <div id="controls">
+                <div id="song-title-container">
+                    <audio src="assets/audio/beabadoobee - 'Cologne'.mp3"></audio>
+                    <h1>
+                        Nothing is playing
+                    </h1>
+                </div>
+                <div class="music-btns">
+                    <div id="minus-volume-btn">
+                        <img src="assets/svgs/darkMinusBtn.svg" alt="Decrement volume button">
                     </div>
-                </li>
-                <li>
                     <div>
-                        <img id="plus-btn" src="assets/svgs/darkPlusBtn.svg" alt="Volume increment button"/>
+                        <input id="volume-slider" type="range" min="0" max="100" value="50">
                     </div>
-                </li>
-                </ul>
-                <ul class="control-container">
-                <li>
-                    <div>
-                        <img id="previous-btn" src="assets/svgs/darkPreviousBtn.svg" alt="Previous button"/>
+                    <div id="add-volume-btn">
+                        <img src="assets/svgs/darkPlusBtn.svg" alt="Increment volume button">
                     </div>
-                </li>
-                <li>
-                    <div>
-                    <img id="play-btn" src="assets/svgs/darkPlayBtn.svg" alt="Play button"/>
+                </div>
+                <div class="music-btns">
+                    <div id="previous-btn">
+                        <img src="assets/svgs/darkPreviousBtn.svg" alt="Previous button">
                     </div>
-                </li>
-                <li>
-                    <div>
-                        <img id="skip-btn" src="assets/svgs/darkSkipBtn.svg" alt="Skip button"/>
+                    <div id="play-stop-btn">
+                        <img src="assets/svgs/darkPlayBtn.svg" alt="Play button">
                     </div>
-                </li>
-                </ul>
-            </div>
+                    <div id="skip-btn">
+                        <img src="assets/svgs/darkSkipBtn.svg" alt="Skip button">
+                    </div>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
