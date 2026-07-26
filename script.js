@@ -98,6 +98,8 @@ function previousSong() {
     audioSource.src = SONG_LIST[currentIndex].song;
     playbackHandler.src = "assets/svgs/darkPauseBtn.svg";
     playbackHandler.alt = "play";
+    updateAlbumImage();
+    updateSongDescription();
     audioSource.play();
 }
 
