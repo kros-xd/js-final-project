@@ -97,6 +97,10 @@ body {
     width: 3vw;
 }
 
+#previous-btn img {
+    transform: scaleX(-1);
+}
+
 #play-stop-btn img {
     height: 10vw;
     width: 10vw;
