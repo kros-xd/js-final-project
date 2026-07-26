@@ -5,132 +5,132 @@
 }
 
 :root {
-    --silver-bg: #c0c0c0;
-    --silver-border: #a1a1a1;
-    --light-bg: #ebebebb7;
-    --white-screen: #f3f3f3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    /* Background SVG from https://bgjar.com/animated-shape */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1011%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M847.4248842453558 91.41759108604543L738.2153713789249 114.63078964259202 761.4285699354716 223.84030250902282 870.6380828019023 200.62710395247623z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1258.5755465128316 311.7182769690145L1134.2066613285435 296.3273707899225 1175.2437974869067 397.897846997342z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M277.266%2c84.299C290.375%2c83.59%2c302.908%2c78.579%2c309.946%2c67.497C317.538%2c55.543%2c319.365%2c40.646%2c313.032%2c27.98C305.982%2c13.879%2c293.025%2c2.56%2c277.266%2c2.136C260.865%2c1.695%2c246.124%2c11.705%2c238.006%2c25.963C229.974%2c40.07%2c228.765%2c57.932%2c237.828%2c71.399C246.105%2c83.697%2c262.464%2c85.1%2c277.266%2c84.299' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1222.517%2c671.341C1264.055%2c669.942%2c1300.978%2c647.701%2c1322.754%2c612.301C1345.738%2c574.938%2c1353.996%2c529.105%2c1334.044%2c490.039C1312.294%2c447.454%2c1270.263%2c413.42%2c1222.517%2c416.039C1177.746%2c418.495%2c1152.063%2c461.987%2c1130.341%2c501.212C1109.568%2c538.723%2c1089.433%2c581.771%2c1109.859%2c619.472C1130.967%2c658.431%2c1178.232%2c672.833%2c1222.517%2c671.341' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M880.328%2c385.002C934.474%2c383.657%2c988.947%2c362.097%2c1014.44%2c314.309C1038.778%2c268.687%2c1020.417%2c215.706%2c994.514%2c170.954C968.675%2c126.313%2c931.748%2c86.66%2c880.328%2c82.604C821.64%2c77.974%2c760.745%2c99.884%2c729.999%2c150.087C698.048%2c202.256%2c701.185%2c269.74%2c734.159%2c321.269C764.866%2c369.254%2c823.377%2c386.416%2c880.328%2c385.002' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1043.341%2c534.657C1061.135%2c535.186%2c1077.725%2c525.464%2c1086.69%2c510.084C1095.72%2c494.593%2c1096.115%2c475.291%2c1086.923%2c459.895C1077.947%2c444.862%2c1060.83%2c436.645%2c1043.341%2c437.481C1027.173%2c438.254%2c1014.304%2c449.604%2c1006.423%2c463.742C998.779%2c477.455%2c996.987%2c493.708%2c1004.237%2c507.634C1012.079%2c522.697%2c1026.366%2c534.153%2c1043.341%2c534.657' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1086.4903942812712 377.16669973901577L988.2480330107944 373.7360008867645 984.8173341585432 471.9783621572412 1083.05969542902 475.40906100949246z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M54.974%2c432.558C88.472%2c431.227%2c118.797%2c411.71%2c133.877%2c381.769C147.65%2c354.424%2c139.766%2c322.586%2c123.396%2c296.711C108.29%2c272.834%2c83.194%2c258.432%2c54.974%2c257.052C23.821%2c255.528%2c-8.42%2c263.714%2c-26.116%2c289.398C-46.296%2c318.688%2c-53.126%2c357.556%2c-35.596%2c388.505C-17.862%2c419.813%2c19.02%2c433.987%2c54.974%2c432.558' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M96.921%2c575.843C123.306%2c576.344%2c147.186%2c559.82%2c159.389%2c536.421C170.765%2c514.607%2c166.54%2c488.538%2c153.252%2c467.833C141.049%2c448.818%2c119.513%2c439.374%2c96.921%2c439.087C73.743%2c438.792%2c50.203%2c446.627%2c38.054%2c466.368C25.366%2c486.984%2c26.968%2c512.804%2c38.432%2c534.124C50.588%2c556.73%2c71.259%2c575.356%2c96.921%2c575.843' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M536.175%2c363.077C581.491%2c361.918%2c628.117%2c349.491%2c651.809%2c310.844C676.452%2c270.645%2c671.667%2c220.285%2c649.084%2c178.894C625.407%2c135.497%2c585.566%2c96.802%2c536.175%2c98.903C489.093%2c100.906%2c462.385%2c147.064%2c438.764%2c187.842C415.056%2c228.77%2c386.841%2c275.691%2c409.822%2c317.032C433.165%2c359.025%2c488.146%2c364.305%2c536.175%2c363.077' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M104.466%2c168.67C121.401%2c169.331%2c138.006%2c161.066%2c146.288%2c146.279C154.407%2c131.783%2c151.87%2c113.934%2c142.989%2c99.892C134.723%2c86.822%2c119.917%2c80.801%2c104.466%2c80.15C87.527%2c79.436%2c68.371%2c81.718%2c59.875%2c96.389C51.367%2c111.081%2c59.027%2c128.771%2c67.941%2c143.221C76.291%2c156.757%2c88.574%2c168.05%2c104.466%2c168.67' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M535.273097257787 525.0890954507319L582.7481909887064 407.58411509262686 417.76811689968196 477.61400171981245z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M278.6169309533897 139.89851116125084L395.18062777078376 95.28131022606135 311.6017633129245 25.15031588525582z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M929.586917231677 237.19450336159267L771.7406111060712 215.01065174401083 749.5567594884894 372.8569578696166 907.4030656140952 395.04080948719843z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1421.253830931182 469.8243151316055L1400.9186258486502 341.4328832405438 1272.5271939575887 361.7680883230754 1292.8623990401202 490.15952021413716z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1011'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background:
-        linear-gradient(
-            135deg,
-            #FFD6FF,
-            #BBD0FF 50%,
-            #B8C0FF
-        )
-        no-repeat;
+    width: 100vw;
+}
+
+.music-player-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2.5vw;
+    box-shadow: 10px 5px 10px rgba(164, 163, 163, 0.5);
+    background-color: #f6f5f5;
+    border: 5px inset rgba(181, 181, 181, 0.2);
+    height: 80%;
+    width: 60%;
+}
+
+#album-screen {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
+    border-radius: 1.5vw;
+    background-color: rgb(255, 199, 159);
+    border: 5px solid rgba(191, 149, 120, 0.5);
+    box-shadow: 10px 5px 10px rgba(164, 163, 163, 0.5);
+    height: 80%;
+    width: 95%;
 }
 
-#phone-container {
+#album-screen img {
+    height: 50%;
+    width: 50%;
+}
+
+#controls {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: var(--silver-bg);
-    height: 800px;
-    width: 500px;
-    border-radius: 25px;
-    border: 5px solid var(--silver-border);
+    flex-direction: column;
+    margin-top: 2.5%;
+    border-radius: 1.5vw;
+    height: 60%;
+    width: 80%;
 }
 
-#container {
-    margin: 5px;
-    height: 97.5%;
-    width: 100%;
+#volume-slider {
+    width: 25vw;
+}
+
+#song-title-container {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 1.5vw;
+    background-color: rgb(193, 225, 255);
+    border: 5px solid rgba(138, 195, 208, 0.5);
+    box-shadow: 10px 5px 10px rgba(164, 163, 163, 0.5);
+    width: 95%;
+}
+
+.music-btns {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    border: 5px solid var(--silver-border);
-    border-radius: 15px;
-    background: linear-gradient(
-        135deg,
-        var(--light-bg),
-        var(--silver-bg) 90%
-    ),
-    radial-gradient(
-        var(--light-bg),
-        var(--silver-bg) 50%
-    )
-}
-
-#phone-screen {
-    background-color: var(--white-screen);
-    height: 300px;
-    width: 400px;
-    border-radius: 10px;
-    margin-top: 50px;
-    border: 3px solid var(--silver-border);
-}
-
-#song-title-screen {
-    background-color: var(--white-screen);
-    height: 50px;
-    width: 400px;
-    border-radius: 10px;
-    border: 3px solid var(--silver-border);
-    margin-top: 10px;
-    margin-bottom: 20%;
-}
-
-#phone-controls {
-    border: 2px solid black;
-    height: 200px;
-    width: 400px;
-    margin-top: 10px;
-    margin-bottom: 50%;
-}
-
-.control-container {
-    display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    list-style-type: none;
+    flex-direction: row;
 }
 
-#play-btn {
-    padding-left: 15px;
-    margin-right: 95px;
-    margin-left: 95px;
-    height: 100px;
-    width: 100px;
+.music-btns img {
+    height: 3vw;
+    width: 3vw;
 }
 
-#previous-btn, #skip-btn {
-    height: 50px;
-    width: 50px;
+#play-stop-btn img {
+    height: 10vw;
+    width: 10vw;
 }
 
-#minus-btn, #plus-btn {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 20px;
-    height: 20px;
-    width: 20px;
+/*laptop view*/
+@media (width <= 1440px) and (width > 750px) {
+    .music-player-container {
+        width: 80%;
+    }
+
+    .music-btns img {
+        height: 5vh;
+        width: 5vw;
+    }
+
+    #play-stop-btn img {
+        max-height: 8vh;
+        min-height: 120px;
+        max-width: 8vw;
+        min-height: 120px;
+    }
 }
 
-@media (width <= 500px) {
-    #phone-container {
-        background-color: var(--silver-bg);
-        height: 100vh;
+@media (width <= 750px) {
+    .music-player-container {
         width: 100vw;
+        height: 100vh;
+        border-radius: 0;
     }
 
-    #phone-screen {
-        height: 50%;
-        width: 80%;
+    .music-btns img {
+        width: 48px;
+        height: 48px;
     }
 
-    #song-title-screen {
-        height: 5%;
-        width: 80%;
-    }
-
-    #phone-controls {
-        height: 20%;
-        width: 80%;
+    #play-stop-btn img {
+        width: 90px;
+        height: 90px;
     }
 }
