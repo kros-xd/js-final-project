@@ -144,3 +144,12 @@ function updateSongDescription() {
 playbackHandler.addEventListener("click", updateSongDescription);
 previousBtn.addEventListener("click", updateSongDescription);
 skipBtn.addEventListener("click", updateSongDescription);
+
+/*
+I drew the design in my notebook for what I want my music player to look like.
+Then I made a list of requirements to handle how a user might interact
+with this music player. I had to make some new functions on the way, as I didn't 
+think of all the possibilities, but overall, I got the most important features down.
+Implementing stop / start, skips, and volume control was extremely important to me
+and took the longest.
+*/

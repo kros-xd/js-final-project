@@ -138,3 +138,11 @@ body {
         height: 90px;
     }
 }
+
+/* 
+I didn't really have a structure for this, I knew from previous classes to have the habit of resetting
+the website's margin & padding. I went in order of my HTML IDs and Classes to create specific styling
+for them. I knew I wanted a darker background, with a lighter interface, which could have nice 
+contrast for them. I don't know how to animate backgrounds, so I found an svg and linked it to the body
+of my HTML. I was going for a classic music player feel.
+*/
