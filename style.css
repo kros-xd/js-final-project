@@ -1,5 +1,6 @@
 /* Kris Lee | July 24, 2026 */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -35,20 +36,23 @@ body {
     box-shadow: 10px 5px 10px rgba(164, 163, 163, 0.5);
     background-color: #f6f5f5;
     border: 5px inset rgba(181, 181, 181, 0.2);
-    height: 80%;
+    height: 80%; /* TODO: FIX HEIGHT FOR BIGGER SCREENS */
     width: 60%;
 }
 
 #album-screen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2%;
     border-radius: 1.5vw;
     background-color: rgb(255, 199, 159);
-    border: 5px solid rgba(191, 149, 120, 0.5);
+    border: 5px solid rgba(191, 149, 120);
     box-shadow: 10px 5px 10px rgba(164, 163, 163, 0.5);
-    height: 80%;
+    height: 100%;
     width: 95%;
 }
 
@@ -113,7 +117,7 @@ body {
         max-height: 8vh;
         min-height: 120px;
         max-width: 8vw;
-        min-height: 120px;
+        min-width: 120px;
     }
 }
 
